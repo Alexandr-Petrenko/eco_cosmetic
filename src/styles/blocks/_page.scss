@@ -3,8 +3,16 @@
     max-width: $s-container-width;
     margin: 0 auto;
   }
+
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
   @include media(dt) {
     &__header {
+      position: static;
       margin-bottom: 30px;
     }
   }
